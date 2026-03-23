@@ -1,0 +1,6 @@
+c1, q1, v1 = input().split()
+c2, q2, v2 = input().split()
+c1, q1, v1 = int(c1), int(q1), float(v1)
+c2, q2, v2 = int(c2), int(q2), float(v2)
+valor = (q1*v1)+(q2*v2)
+print(f"VALOR A PAGAR: R$ {valor:.2f}")
