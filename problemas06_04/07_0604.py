@@ -8,13 +8,14 @@ inicial = cap
 
 
 for i in range(1, tempo+1):
-    total =  cap * (1 + tax)**i
+    cap =  cap * (1 + tax)
     cap += apo
 
 
-
+total = cap
 t_apo = (apo * tempo) + inicial
 rend = total - t_apo
+
 
 print(f"Total em aportes: R$ {t_apo:.2f}")
 print(f"Total em rendimentos: R$ {rend:.2f}")
