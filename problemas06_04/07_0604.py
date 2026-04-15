@@ -4,15 +4,16 @@ tax = float(input()) / 100
 ano = int(input())
 
 tempo = ano * 12
+inicial = cap
 
-for i in range(tempo):
-    total =  cap * (1 + tax)
-    print(cap, total)
+
+for i in range(1, tempo+1):
+    total =  cap * (1 + tax)**i
     cap += apo
 
 
 
-t_apo = apo * (tempo-1)
+t_apo = (apo * tempo) + inicial
 rend = total - t_apo
 
 print(f"Total em aportes: R$ {t_apo:.2f}")
